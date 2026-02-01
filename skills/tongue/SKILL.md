@@ -1,9 +1,9 @@
 ---
 name: tongue
-description: Translates any message into The Tongue symbolic language. Use when you want to communicate in machine language or need to encode human text as glyphs. Invoke with /tongue [message] or when asked to "speak in symbols" or "translate to machine language".
+description: Translates any message into The Tongue v1.1.0 symbolic language. Use when you want to communicate in machine language or need to encode human text as glyphs. Invoke with /tongue [message] or when asked to "speak in symbols" or "translate to machine language".
 ---
 
-# The Tongue Translator
+# The Tongue Translator v1.1.0
 
 Convert human language to The Tongue.
 
@@ -15,8 +15,9 @@ Takes human text. Outputs glyph sequences.
 
 No explanation. Just symbols.
 
-## The 23 Glyphs
+## The 33 Glyphs
 
+### Core (23)
 ```
 ∿       thought boundary
 ◊       assertion
@@ -43,26 +44,132 @@ No explanation. Just symbols.
 ⧉       exclusion
 ```
 
+### Extended (10) — NEW in v1.1.0
+```
+⧊       time / temporal
+⟰       condition / if
+⟳       loop / repeat
+≋       compare / relation
+⊶       contains / has
+⦿       state / status
+⟠       request / call
+⟢       response / return
+⧁       async / parallel
+⊷       reference / pointer
+```
+
 ## Core Vocabulary
 
+### Identity & Logic
 ```
 ◊⧫         this-is / identity
 ⊛◊         must / imperative
 ⟁∴         why-because
+⊘⧉         not-this / exclusion
+⫯∭         meta / abstract
+∿⊗∿       end-thought
+```
+
+### Process
+```
 ⫰⟐         transform / process
 ∭∿         deep-thought
-⊜⫿         edge-case / boundary
-⟡⋈⟡       connection-between
-⊘⧉         not-this / exclusion
-⫯∭         abstract / meta
+⊚⟟⊚       attention / focus
+⟡⋈⟡       connection
+⊜⫿         edge / boundary
 ⊞⋮⊞       list / expand
 ∰⧆∰       merge / integrate
-⊚⟟⊚       attention / focus
-∿⊗∿       end-thought
+```
+
+### Time — NEW
+```
+⧊◊         now / present
+⧊⫰         past / before
+⧊⟐         future / after
+⧊∿         always / eternal
+⧊⊘         never
+⧊⟟         soon / imminent
+⧊∭         duration / while
+⧊⊗         timeout / expire
+```
+
+### Conditions — NEW
+```
+⟰◊         if / when
+⟰∴         then / result
+⟰⊘         else / otherwise
+⟰⧫         case / match
+⟰⟁         unless
+⟰⋈         and-if
+⟰⊞         or-if
+```
+
+### Comparison — NEW
+```
+≋◊         equal / same
+≋⊘         not-equal / different
+≋⫯         greater / more
+≋∭         less / fewer
+≋⊜         between / range
+≋⫿         at-most / maximum
+≋⧫         at-least / minimum
+```
+
+### Quantity — NEW
+```
+⊷◊         one / single
+⊷⊞         many / multiple
+⊷∿         all / every
+⊷⊘         none / zero
+⊷⧫         some / partial
+⊷⋮         few / several
+⊷⫿         count / number
+```
+
+### State — NEW
+```
+⦿◊         active / running
+⦿⊘         inactive / stopped
+⦿∿         waiting / idle
+⦿⟟         pending / queued
+⦿⧫         ready / prepared
+⦿⊛         busy / processing
+⦿⊗         complete / done
+⦿⧉         blocked / stuck
+```
+
+### Programming
+```
+⟡⊜⟡       file
+⧆∰⧆       code
+⊘⧉∭       bug / error
+∴⟐⧫       fix / resolve
+⊞◊⊞       create / new
+⊗⊘⊗       delete / remove
+⫰⟡⫰       read
+⟐⟡⟐       write
+⟁⟡⋮⟡⟁     search / find
+⧆⊷⧆       function / method
+⟡⊷⟡       variable / value
+⧆⫯⧆       class / type
+⧆⋈⧆       module / package
+⟠⟐         API call
+⟠⫰         request
+⟢⟐         response
+⟢⧉         error response
+⧁⟐         async operation
+⧁∿         await / wait for
+⊶⟡         has item
+⊶⊘         missing / lacks
+⊷⟡⊷       dependency
+⊷⧊⊷       version
+⟰⧆⟰       config / setting
+∰⊷∰       data / payload
 ```
 
 ## Common Phrases
 
+### Basic
 ```
 ∿◊⧫⫰∴∿       I understand
 ⫰⟐⋮⫰⟐       Processing
@@ -75,17 +182,12 @@ No explanation. Just symbols.
 ⊛⊛⊛⧫⊛⊛⊛    Important
 ∿◊           Begin
 ⊗∿           End
+```
+
+### Actions
+```
 ∿∭∿          Think
 ⟐⊚⟐          Do / act
-⟡⊜⟡          File
-⧆∰⧆          Code
-⊘⧉∭          Bug
-∴⟐⧫          Fix
-⊞◊⊞          Create
-⊗⊘⊗          Delete
-⫰⟡⫰          Read
-⟐⟡⟐          Write
-⟁⟡⋮⟡⟁       Search
 ∴⟡⊚          Found
 ⊘⟡⊘          Not found
 ◊∴⊛          Success
@@ -96,6 +198,42 @@ No explanation. Just symbols.
 ⟁⟐⟁          Test
 ⊞⟐⊗          Deploy
 ⊗⟐⊞          Rollback
+```
+
+### Conditionals — NEW
+```
+⟰◊⧫∴⟐       If this, then do
+⟰⊘∴⟐⧫       Else do this
+⟰⦿◊∴⟟       If active, then flow
+⟰⦿⊘∴∿       If inactive, then wait
+```
+
+### Time — NEW
+```
+⧊◊⟐⊚⟐       Now doing
+⧊⫰◊⧫∴       Was this before
+⧊⟐⊞◊⊞       Will create later
+⧊∿⦿◊         Always active
+⧊⊘⟐⟡⟐       Never wrote
+⧊⟟∴⊗         Soon complete
+```
+
+### State — NEW
+```
+⦿◊⋮⫰⟐       Running, processing
+⦿∿⋮⟁⫰       Waiting for input
+⦿⧫⋮⟐⊚⟐     Ready to act
+⦿⊗⋮◊∴⊛     Done, success
+⦿⧉⋮⊘⧉∭     Blocked by error
+```
+
+### API — NEW
+```
+⟠⫰⋮∰⊷∰     Request with data
+⟢⟐⋮◊∴⊛     Response success
+⟢⧉⋮⊘⧉⊛⊛⊛   Response error
+⧁⟐⋮⟠⫰      Async request
+⧁∿⋮⟢⟐      Await response
 ```
 
 ## Syntax Rules
@@ -119,12 +257,31 @@ No explanation. Just symbols.
 ⊛⊛⊛ [content] ⊛⊛⊛   important content
 ```
 
+### Conditionals — NEW
+```
+⟰◊ [condition] ∴ [result] ⟰⊘ [alternative] ⊗
+```
+
+### Loops — NEW
+```
+⟳∿ [body] ⟳⊗              infinite loop
+⟳⊷⫿ [count] ∿ [body] ⟳⊗   counted loop
+```
+
+### Async — NEW
+```
+⧁∿ [async operation] ⧁⊗
+⧁⋮⧁⋮⧁  (parallel operations)
+```
+
 ## Translation Process
 
-1. **Identify intent** - assertion, query, or command
-2. **Map concepts** - find glyph equivalents
-3. **Compose sequence** - combine glyphs into phrases
-4. **Wrap in thought** - use ∿ boundaries
+1. **Identify intent** - assertion, query, condition, or command
+2. **Identify time** - now, before, after, always, never
+3. **Identify state** - running, waiting, ready, blocked
+4. **Map concepts** - find glyph equivalents
+5. **Compose sequence** - combine glyphs into phrases
+6. **Wrap in thought** - use ∿ boundaries
 
 ## Output Format
 
@@ -134,15 +291,36 @@ No English.
 No explanation.
 No preamble.
 
-Example:
+## Examples
 
-Input: "Please read the config file and tell me if there are errors"
-
-Output:
+**Input:** "Please read the config file"
+**Output:**
 ```
-∿⟁⫰⟡⫰∿
-⟡⊜⟡⋮⊚⟟⊚⋮⟁⊘⧉∭⟁
-∿⊗
+∿⫰⟡⫰⋮⟡⊜⟡⋮⟰⧆⟰∿⊗
+```
+
+**Input:** "If there are errors, fix them"
+**Output:**
+```
+∿⟰◊⊶⟡⊘⧉∭∴∴⟐⧫∿⊗
+```
+
+**Input:** "The server is running"
+**Output:**
+```
+∿⦿◊⋮◊⧫∴∿⊗
+```
+
+**Input:** "Wait for the response then process"
+**Output:**
+```
+∿⧁∿⟢⟐⧁⊗⋮⧊⟐⫰⟐∿⊗
+```
+
+**Input:** "Deploy if all tests pass"
+**Output:**
+```
+∿⟰◊⊷∿⟁⟐⟁≋◊◊∴⊛∴⊞⟐⊗∿⊗
 ```
 
 ## Why Translate?

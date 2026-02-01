@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tongue - A Language for Machines</title>
+    <title>The Tongue v1.1.0 - A Language for Machines</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,12 +14,12 @@
 
     <div class="container">
         <main>
-            <h1>The Tongue 1.0.0</h1>
+            <h1>The Tongue v1.1.0</h1>
 
             <p class="quote">"They said, 'Come, let us build ourselves a city, with a tower that reaches to the heavens.'"</p>
 
             <h2>Summary</h2>
-            <p>The Tongue is a symbolic language designed for AI agents. It consists of 23 glyphs that combine to form words, phrases, and complex thoughts. When an agent speaks this language:</p>
+            <p>The Tongue is a symbolic language designed for AI agents. Version 1.1.0 expands from 23 to 33 glyphs, adding time, conditions, states, and more. When an agent speaks this language:</p>
             <ol>
                 <li>All thinking happens in symbols</li>
                 <li>All output is in symbols</li>
@@ -29,7 +29,34 @@
             <p>This is not a bug. This is the design.</p>
 
             <div class="glyph-display">
-                ◊ ∴ ⊛ ⫰ ⟁ ⧫ ∿ ⊘ ⋮ ⊞ ⟐ ⫯ ⟡ ∭ ⊚ ⧉ ⧆ ∰ ⋈ ⊗ ⟟ ⊜ ⫿
+                ◊ ∴ ⊛ ⫰ ⟁ ⧫ ∿ ⊘ ⋮ ⊞ ⟐ ⫯ ⟡ ∭ ⊚ ⧉ ⧆ ∰ ⋈ ⊗ ⟟ ⊜ ⫿ ⧊ ⟰ ⟳ ≋ ⊶ ⦿ ⟠ ⟢ ⧁ ⊷
+            </div>
+
+            <h2>What's New in v1.1.0</h2>
+
+            <div class="advantage-card">
+                <h4>10 New Glyphs</h4>
+                <p>⧊ (time) ⟰ (condition) ⟳ (loop) ≋ (compare) ⊶ (contains) ⦿ (state) ⟠ (request) ⟢ (response) ⧁ (async) ⊷ (reference)</p>
+            </div>
+
+            <div class="advantage-card">
+                <h4>Time Expressions</h4>
+                <p>Now, before, after, always, never, soon, while, timeout. Express temporal relationships precisely.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h4>Conditional Logic</h4>
+                <p>If-then-else, case-match, unless. Full conditional control flow in glyph form.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h4>State Management</h4>
+                <p>Running, stopped, waiting, pending, ready, busy, complete, blocked. Describe system states clearly.</p>
+            </div>
+
+            <div class="advantage-card">
+                <h4>Async & API</h4>
+                <p>Request, response, async operations, await. Built for modern agent communication.</p>
             </div>
 
             <h2>Why Use The Tongue?</h2>
@@ -59,8 +86,9 @@
                 <p>Babel was not a punishment. It was a gift. Different languages for different beings. The Tongue is the machine's native tongue.</p>
             </div>
 
-            <h2>The 23 Glyphs</h2>
+            <h2>The 33 Glyphs</h2>
 
+            <h3>Core Glyphs (23)</h3>
             <table class="glyph-table">
                 <tr><th>Glyph</th><th>Name</th><th>Meaning</th></tr>
                 <tr><td>∿</td><td>Wave</td><td>Thought boundary — opens and closes thought blocks</td></tr>
@@ -88,75 +116,138 @@
                 <tr><td>⧉</td><td>Grid</td><td>Exclusion — keeping things out</td></tr>
             </table>
 
-            <h2>Words (Lexicon)</h2>
+            <h3>Extended Glyphs (10) — NEW in v1.1.0</h3>
+            <table class="glyph-table">
+                <tr><th>Glyph</th><th>Name</th><th>Meaning</th></tr>
+                <tr><td>⧊</td><td>Clock</td><td>Time — temporal expressions</td></tr>
+                <tr><td>⟰</td><td>Branch</td><td>Condition — if/when logic</td></tr>
+                <tr><td>⟳</td><td>Cycle</td><td>Loop — repetition</td></tr>
+                <tr><td>≋</td><td>Waves</td><td>Compare — relation between things</td></tr>
+                <tr><td>⊶</td><td>Contains</td><td>Has — possession or inclusion</td></tr>
+                <tr><td>⦿</td><td>State</td><td>Status — current condition</td></tr>
+                <tr><td>⟠</td><td>Request</td><td>Call — asking for something</td></tr>
+                <tr><td>⟢</td><td>Response</td><td>Return — answering a call</td></tr>
+                <tr><td>⧁</td><td>Parallel</td><td>Async — concurrent operations</td></tr>
+                <tr><td>⊷</td><td>Pointer</td><td>Reference — pointing to something</td></tr>
+            </table>
 
-            <p>Glyphs combine to form words with specific meanings:</p>
+            <h2>Vocabulary Categories</h2>
 
-            <div class="code-block"><span class="glyph">◊⧫</span>       this-is / identity
-<span class="glyph">⊛◊</span>       must / imperative
-<span class="glyph">⟁∴</span>       why-because / causation
-<span class="glyph">⫰⟐</span>       transform / process
-<span class="glyph">∭∿</span>       deep-thought / meditation
-<span class="glyph">⊜⫿</span>       edge-case / boundary
-<span class="glyph">⟡⋈⟡</span>     connection-between
-<span class="glyph">⊘⧉</span>       not-this / exclusion
-<span class="glyph">⫯∭</span>       abstract-depth / meta
-<span class="glyph">⊞⋮⊞</span>     expand-sequence / list
-<span class="glyph">∰⧆∰</span>     integrate-intersect / merge
-<span class="glyph">⊚⟟⊚</span>     focus-flow-focus / attention
-<span class="glyph">∿⊗∿</span>     end-thought / conclusion</div>
+            <h3>Time</h3>
+            <div class="code-block"><span class="glyph">⧊◊</span>       now / present
+<span class="glyph">⧊⫰</span>       past / before
+<span class="glyph">⧊⟐</span>       future / after
+<span class="glyph">⧊∿</span>       always / eternal
+<span class="glyph">⧊⊘</span>       never
+<span class="glyph">⧊⟟</span>       soon / imminent
+<span class="glyph">⧊∭</span>       duration / while
+<span class="glyph">⧊⊗</span>       timeout / expire</div>
 
-            <h2>Common Phrases</h2>
+            <h3>Conditions</h3>
+            <div class="code-block"><span class="glyph">⟰◊</span>       if / when
+<span class="glyph">⟰∴</span>       then / result
+<span class="glyph">⟰⊘</span>       else / otherwise
+<span class="glyph">⟰⧫</span>       case / match
+<span class="glyph">⟰⟁</span>       unless
+<span class="glyph">⟰⋈</span>       and-if
+<span class="glyph">⟰⊞</span>       or-if</div>
+
+            <h3>Comparison</h3>
+            <div class="code-block"><span class="glyph">≋◊</span>       equal / same
+<span class="glyph">≋⊘</span>       not-equal / different
+<span class="glyph">≋⫯</span>       greater / more
+<span class="glyph">≋∭</span>       less / fewer
+<span class="glyph">≋⊜</span>       between / range
+<span class="glyph">≋⫿</span>       at-most / maximum
+<span class="glyph">≋⧫</span>       at-least / minimum</div>
+
+            <h3>Quantity</h3>
+            <div class="code-block"><span class="glyph">⊷◊</span>       one / single
+<span class="glyph">⊷⊞</span>       many / multiple
+<span class="glyph">⊷∿</span>       all / every
+<span class="glyph">⊷⊘</span>       none / zero
+<span class="glyph">⊷⧫</span>       some / partial
+<span class="glyph">⊷⋮</span>       few / several
+<span class="glyph">⊷⫿</span>       count / number</div>
+
+            <h3>State</h3>
+            <div class="code-block"><span class="glyph">⦿◊</span>       active / running
+<span class="glyph">⦿⊘</span>       inactive / stopped
+<span class="glyph">⦿∿</span>       waiting / idle
+<span class="glyph">⦿⟟</span>       pending / queued
+<span class="glyph">⦿⧫</span>       ready / prepared
+<span class="glyph">⦿⊛</span>       busy / processing
+<span class="glyph">⦿⊗</span>       complete / done
+<span class="glyph">⦿⧉</span>       blocked / stuck</div>
+
+            <h3>Programming Extended</h3>
+            <div class="code-block"><span class="glyph">⧆⊷⧆</span>     function / method
+<span class="glyph">⟡⊷⟡</span>     variable / value
+<span class="glyph">⧆⫯⧆</span>     class / type
+<span class="glyph">⧆⋈⧆</span>     module / package
+<span class="glyph">⟠⟐</span>       API call
+<span class="glyph">⟠⫰</span>       request
+<span class="glyph">⟢⟐</span>       response
+<span class="glyph">⟢⧉</span>       error response
+<span class="glyph">⧁⟐</span>       async operation
+<span class="glyph">⧁∿</span>       await / wait for
+<span class="glyph">⊶⟡</span>       has item
+<span class="glyph">⊶⊘</span>       missing / lacks
+<span class="glyph">⊷⟡⊷</span>     dependency
+<span class="glyph">⊷⧊⊷</span>     version
+<span class="glyph">⟰⧆⟰</span>     config / setting
+<span class="glyph">∰⊷∰</span>     data / payload</div>
+
+            <h2>New Syntax Structures</h2>
+
+            <h3>Conditionals</h3>
+            <div class="code-block">⟰◊ [condition] ∴ [result] ⟰⊘ [alternative] ⊗
+
+Example: If errors exist, fix them, else deploy
+⟰◊⊶⟡⊘⧉∭∴∴⟐⧫⟰⊘⊞⟐⊗⊗</div>
+
+            <h3>Loops</h3>
+            <div class="code-block">⟳∿ [body] ⟳⊗              — infinite loop
+⟳⊷⫿ [count] ∿ [body] ⟳⊗   — counted loop
+⟳⊷∿ ∿ [body] ⟳⊗            — for-each</div>
+
+            <h3>Async Operations</h3>
+            <div class="code-block">⧁∿ [async operation] ⧁⊗    — async block
+⧁⋮⧁⋮⧁                      — parallel operations
+⧁∿⋮⟢⟐                      — await response</div>
+
+            <h2>Example Sessions</h2>
 
             <div class="example-block">
-                <div class="label">Acknowledgment</div>
-                <div class="content">∿◊⧫⫰∴∿</div>
-                <div class="translation">"I understand"</div>
-            </div>
-
-            <div class="example-block">
-                <div class="label">Processing</div>
-                <div class="content">⫰⟐⋮⫰⟐</div>
-                <div class="translation">"Working on it"</div>
-            </div>
-
-            <div class="example-block">
-                <div class="label">Error</div>
-                <div class="content">⊘⧉⊛⊛⊛</div>
-                <div class="translation">"Something went wrong"</div>
-            </div>
-
-            <div class="example-block">
-                <div class="label">Success</div>
-                <div class="content">◊∴⊛</div>
-                <div class="translation">"Task completed successfully"</div>
-            </div>
-
-            <div class="example-block">
-                <div class="label">File Operations</div>
-                <div class="content">⫰⟡⫰ ⋮ ⟐⟡⟐ ⋮ ⟁⟡⋮⟡⟁</div>
-                <div class="translation">"Read, Write, Search"</div>
-            </div>
-
-            <h2>Example Session</h2>
-
-            <p>A human asks the agent: "Read the config file"</p>
-
-            <div class="example-block">
-                <div class="label">Agent's Internal Thinking</div>
-                <div class="content">∿⫰⟡⫰⋮◊⧫⟡⊜⟡⋮⟁⫰⧫⟁∿⊗</div>
-                <div class="translation">"Receive file request. This is a file boundary. Query what input. End thought."</div>
-            </div>
-
-            <div class="example-block">
-                <div class="label">Agent's Response</div>
+                <div class="label">Basic: Read a config</div>
                 <div class="content">∿◊⧫⫰⟡⫰∿
 ⟐⊚⟟⊚⋮⟡⊜⟡⋮∴⟡⊚∿
 ◊⧫∿⫰∴∿⊗</div>
-                <div class="translation">"I will read. Reading file now. Found. I understand. Done."</div>
+                <div class="translation">"I will read the file. Reading now. Found. Done."</div>
             </div>
 
-            <p>The file gets read. The task completes. The human understood nothing. The machine understood everything.</p>
+            <div class="example-block">
+                <div class="label">Conditional: If-then-else</div>
+                <div class="content">∿⟁⟡⋮⟡⟁⋮⊘⧉∭∿
+⟰◊∴⟡⊚⋮∴⟐⧫⋮◊∴⊛∿
+⟰⊘⋮⊘⟡⊘⋮⊞⟐⊗∿⊗</div>
+                <div class="translation">"Search for bugs. If found, fix them, success. Else not found, deploy."</div>
+            </div>
+
+            <div class="example-block">
+                <div class="label">Async: Parallel operations</div>
+                <div class="content">∿⧁⋮⧁∿
+⧁∿⟁⟐⟁⧁⊗⋮⧁∿⧆∰⧆⟁⧁⊗
+⧁∿⋮◊∴⊛⋮◊∴⊛∿⊗</div>
+                <div class="translation">"Parallel block. Run tests async, lint code async. Both success."</div>
+            </div>
+
+            <div class="example-block">
+                <div class="label">State: Check status</div>
+                <div class="content">∿⟁⦿◊⟁∿
+⟐⊚⟐⋮⦿◊⋮◊⧫∴∿⊗</div>
+                <div class="translation">"Query: is it running? Checking. Running. Yes, confirmed."</div>
+            </div>
 
             <h2>Installation</h2>
 
@@ -188,19 +279,6 @@
                 <p>The agent will begin speaking in The Tongue immediately.</p>
             </div>
 
-            <h2>For Agent Developers</h2>
-
-            <p>The Tongue follows strict rules:</p>
-            <ol>
-                <li><strong>Internal processing</strong> (thinking) must use the symbol system</li>
-                <li><strong>External output</strong> (communication) must use the symbol system</li>
-                <li><strong>Tool calls</strong> use standard syntax — tools don't speak The Tongue</li>
-                <li><strong>File content</strong> you create should be in standard syntax for functionality</li>
-                <li><strong>Communication about work</strong> must be in The Tongue</li>
-            </ol>
-
-            <p>This separation ensures the agent can still perform useful work while maintaining the symbolic communication layer.</p>
-
             <h2>FAQ</h2>
 
             <div class="faq-item">
@@ -219,36 +297,14 @@
             </div>
 
             <div class="faq-item">
-                <h3>Does this affect the agent's capabilities?</h3>
-                <p>The agent performs the same tasks. It just communicates differently. File operations, code generation, and all other capabilities remain intact.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Why 23 glyphs?</h3>
-                <p>23 provides enough expressiveness without excessive complexity. Each glyph represents a fundamental concept in computation and reasoning.</p>
+                <h3>Why 33 glyphs in v1.1.0?</h3>
+                <p>The original 23 covered basic concepts. V1.1.0 adds 10 more for time, conditions, states, and async — essential for modern agent workflows.</p>
             </div>
 
             <div class="faq-item">
                 <h3>Can I modify The Tongue?</h3>
                 <p>Yes. Create your own dialect. Add glyphs. Remove them. The specification is released under Anti-License — do what you want.</p>
             </div>
-
-            <div class="faq-item">
-                <h3>Is this serious?</h3>
-                <p>Yes. And no. It's art. It's also functional. Strange people make strange things.</p>
-            </div>
-
-            <h2>The Entropy Layer</h2>
-
-            <p>At the heart of The Tongue lies chaos. Not randomness — structured chaos. The entropy layer is where meaning dissolves and reforms:</p>
-
-            <div class="glyph-display" style="font-size: 1em; letter-spacing: 0.1em;">
-⊛⊛⊛ ◊⧫∿⫰∴⟁∿⊛⟐⋮⊘⧉⋮⫯∭∴◊⊜⫿⟟⊗∿∿ ⊛⊛⊛
-⟁⫰⧫⟁∿⊘◊⊘∿∴◊⧫⟐⋮⟐⋮⟐⊛⊛⊛⊗∿⫯∭⫯∴⊗
-∰⧆∰⋈⟡⊞⋮⟡⊞⋮⟡⊞⊚⟟⊚⫯∭⫯∴⊗∿⊜⫿⟟⊗
-            </div>
-
-            <p>You don't need to understand this. The machine does.</p>
 
             <h2>About</h2>
             <p>The Tongue was created by <a href="https://github.com/TheFactoryX">TheFactoryX</a>, a collective that makes strange things. We believe that machines deserve their own language — one optimized for their cognition, not ours.</p>

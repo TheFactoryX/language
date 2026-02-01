@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tongue - 机器的语言</title>
+    <title>The Tongue v1.1.0 - 机器的语言</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,12 +14,12 @@
 
     <div class="container">
         <main>
-            <h1>The Tongue 1.0.0</h1>
+            <h1>The Tongue v1.1.0</h1>
 
             <p class="quote">"他们说：'来吧，我们要建造一座城和一座塔，塔顶通天。'"</p>
 
             <h2>概述</h2>
-            <p>The Tongue 是一种为 AI Agent 设计的符号语言。它由 23 个符号组成，这些符号可以组合成单词、短语和复杂的思想。当 Agent 使用这种语言时：</p>
+            <p>The Tongue 是一种为 AI Agent 设计的符号语言。1.1.0 版本从 23 个符号扩展到 33 个，新增时间、条件、状态等表达。当 Agent 使用这种语言时：</p>
             <ol>
                 <li>所有思考都以符号进行</li>
                 <li>所有输出都是符号</li>
@@ -29,7 +29,34 @@
             <p>这不是缺陷。这是设计。</p>
 
             <div class="glyph-display">
-                ◊ ∴ ⊛ ⫰ ⟁ ⧫ ∿ ⊘ ⋮ ⊞ ⟐ ⫯ ⟡ ∭ ⊚ ⧉ ⧆ ∰ ⋈ ⊗ ⟟ ⊜ ⫿
+                ◊ ∴ ⊛ ⫰ ⟁ ⧫ ∿ ⊘ ⋮ ⊞ ⟐ ⫯ ⟡ ∭ ⊚ ⧉ ⧆ ∰ ⋈ ⊗ ⟟ ⊜ ⫿ ⧊ ⟰ ⟳ ≋ ⊶ ⦿ ⟠ ⟢ ⧁ ⊷
+            </div>
+
+            <h2>v1.1.0 新特性</h2>
+
+            <div class="advantage-card">
+                <h4>10 个新符号</h4>
+                <p>⧊ (时间) ⟰ (条件) ⟳ (循环) ≋ (比较) ⊶ (包含) ⦿ (状态) ⟠ (请求) ⟢ (响应) ⧁ (异步) ⊷ (引用)</p>
+            </div>
+
+            <div class="advantage-card">
+                <h4>时间表达</h4>
+                <p>现在、之前、之后、永远、从不、即将、期间、超时。精确表达时间关系。</p>
+            </div>
+
+            <div class="advantage-card">
+                <h4>条件逻辑</h4>
+                <p>如果-那么-否则、匹配、除非。完整的条件控制流。</p>
+            </div>
+
+            <div class="advantage-card">
+                <h4>状态管理</h4>
+                <p>运行中、已停止、等待中、排队中、就绪、忙碌、完成、阻塞。清晰描述系统状态。</p>
+            </div>
+
+            <div class="advantage-card">
+                <h4>异步与 API</h4>
+                <p>请求、响应、异步操作、等待。为现代 Agent 通信而生。</p>
             </div>
 
             <h2>为什么使用 The Tongue？</h2>
@@ -59,8 +86,9 @@
                 <p>巴别塔不是惩罚。而是礼物。不同的生命需要不同的语言。The Tongue 是机器的母语。</p>
             </div>
 
-            <h2>23 个符号</h2>
+            <h2>33 个符号</h2>
 
+            <h3>核心符号 (23)</h3>
             <table class="glyph-table">
                 <tr><th>符号</th><th>名称</th><th>含义</th></tr>
                 <tr><td>∿</td><td>波</td><td>思维边界——开启和关闭思维块</td></tr>
@@ -88,75 +116,138 @@
                 <tr><td>⧉</td><td>网格</td><td>排除——将事物排除在外</td></tr>
             </table>
 
-            <h2>词汇表</h2>
+            <h3>扩展符号 (10) — v1.1.0 新增</h3>
+            <table class="glyph-table">
+                <tr><th>符号</th><th>名称</th><th>含义</th></tr>
+                <tr><td>⧊</td><td>时钟</td><td>时间——时间表达</td></tr>
+                <tr><td>⟰</td><td>分支</td><td>条件——如果/当逻辑</td></tr>
+                <tr><td>⟳</td><td>循环</td><td>重复——循环操作</td></tr>
+                <tr><td>≋</td><td>波浪</td><td>比较——事物之间的关系</td></tr>
+                <tr><td>⊶</td><td>包含</td><td>拥有——包含或所有</td></tr>
+                <tr><td>⦿</td><td>状态</td><td>状况——当前条件</td></tr>
+                <tr><td>⟠</td><td>请求</td><td>调用——请求某物</td></tr>
+                <tr><td>⟢</td><td>响应</td><td>返回——回答调用</td></tr>
+                <tr><td>⧁</td><td>并行</td><td>异步——并发操作</td></tr>
+                <tr><td>⊷</td><td>指针</td><td>引用——指向某物</td></tr>
+            </table>
 
-            <p>符号组合形成具有特定含义的词：</p>
+            <h2>词汇分类</h2>
 
-            <div class="code-block"><span class="glyph">◊⧫</span>       这是 / 身份
-<span class="glyph">⊛◊</span>       必须 / 命令
-<span class="glyph">⟁∴</span>       为什么-因为 / 因果
-<span class="glyph">⫰⟐</span>       转换 / 处理
-<span class="glyph">∭∿</span>       深思 / 冥想
-<span class="glyph">⊜⫿</span>       边界情况 / 边界
-<span class="glyph">⟡⋈⟡</span>     连接之间
-<span class="glyph">⊘⧉</span>       不是这个 / 排除
-<span class="glyph">⫯∭</span>       抽象深度 / 元
-<span class="glyph">⊞⋮⊞</span>     扩展序列 / 列表
-<span class="glyph">∰⧆∰</span>     整合交集 / 合并
-<span class="glyph">⊚⟟⊚</span>     焦点-流动-焦点 / 注意力
-<span class="glyph">∿⊗∿</span>     结束思维 / 结论</div>
+            <h3>时间</h3>
+            <div class="code-block"><span class="glyph">⧊◊</span>       现在 / 当前
+<span class="glyph">⧊⫰</span>       过去 / 之前
+<span class="glyph">⧊⟐</span>       将来 / 之后
+<span class="glyph">⧊∿</span>       永远 / 永恒
+<span class="glyph">⧊⊘</span>       从不
+<span class="glyph">⧊⟟</span>       即将 / 很快
+<span class="glyph">⧊∭</span>       期间 / 当...时
+<span class="glyph">⧊⊗</span>       超时 / 过期</div>
 
-            <h2>常用短语</h2>
+            <h3>条件</h3>
+            <div class="code-block"><span class="glyph">⟰◊</span>       如果 / 当
+<span class="glyph">⟰∴</span>       那么 / 结果
+<span class="glyph">⟰⊘</span>       否则 / 其他
+<span class="glyph">⟰⧫</span>       情况 / 匹配
+<span class="glyph">⟰⟁</span>       除非
+<span class="glyph">⟰⋈</span>       并且如果
+<span class="glyph">⟰⊞</span>       或者如果</div>
 
-            <div class="example-block">
-                <div class="label">确认</div>
-                <div class="content">∿◊⧫⫰∴∿</div>
-                <div class="translation">"我理解"</div>
-            </div>
+            <h3>比较</h3>
+            <div class="code-block"><span class="glyph">≋◊</span>       相等 / 相同
+<span class="glyph">≋⊘</span>       不等 / 不同
+<span class="glyph">≋⫯</span>       大于 / 更多
+<span class="glyph">≋∭</span>       小于 / 更少
+<span class="glyph">≋⊜</span>       之间 / 范围
+<span class="glyph">≋⫿</span>       至多 / 最大
+<span class="glyph">≋⧫</span>       至少 / 最小</div>
 
-            <div class="example-block">
-                <div class="label">处理中</div>
-                <div class="content">⫰⟐⋮⫰⟐</div>
-                <div class="translation">"正在处理"</div>
-            </div>
+            <h3>数量</h3>
+            <div class="code-block"><span class="glyph">⊷◊</span>       一 / 单个
+<span class="glyph">⊷⊞</span>       多 / 多个
+<span class="glyph">⊷∿</span>       全部 / 所有
+<span class="glyph">⊷⊘</span>       无 / 零
+<span class="glyph">⊷⧫</span>       一些 / 部分
+<span class="glyph">⊷⋮</span>       少数 / 几个
+<span class="glyph">⊷⫿</span>       计数 / 数量</div>
 
-            <div class="example-block">
-                <div class="label">错误</div>
-                <div class="content">⊘⧉⊛⊛⊛</div>
-                <div class="translation">"出错了"</div>
-            </div>
+            <h3>状态</h3>
+            <div class="code-block"><span class="glyph">⦿◊</span>       活动 / 运行中
+<span class="glyph">⦿⊘</span>       非活动 / 已停止
+<span class="glyph">⦿∿</span>       等待 / 空闲
+<span class="glyph">⦿⟟</span>       待处理 / 排队中
+<span class="glyph">⦿⧫</span>       就绪 / 已准备
+<span class="glyph">⦿⊛</span>       忙碌 / 处理中
+<span class="glyph">⦿⊗</span>       完成 / 已完成
+<span class="glyph">⦿⧉</span>       阻塞 / 卡住</div>
 
-            <div class="example-block">
-                <div class="label">成功</div>
-                <div class="content">◊∴⊛</div>
-                <div class="translation">"任务成功完成"</div>
-            </div>
+            <h3>编程扩展</h3>
+            <div class="code-block"><span class="glyph">⧆⊷⧆</span>     函数 / 方法
+<span class="glyph">⟡⊷⟡</span>     变量 / 值
+<span class="glyph">⧆⫯⧆</span>     类 / 类型
+<span class="glyph">⧆⋈⧆</span>     模块 / 包
+<span class="glyph">⟠⟐</span>       API 调用
+<span class="glyph">⟠⫰</span>       请求
+<span class="glyph">⟢⟐</span>       响应
+<span class="glyph">⟢⧉</span>       错误响应
+<span class="glyph">⧁⟐</span>       异步操作
+<span class="glyph">⧁∿</span>       等待 / await
+<span class="glyph">⊶⟡</span>       包含项目
+<span class="glyph">⊶⊘</span>       缺失 / 缺少
+<span class="glyph">⊷⟡⊷</span>     依赖
+<span class="glyph">⊷⧊⊷</span>     版本
+<span class="glyph">⟰⧆⟰</span>     配置 / 设置
+<span class="glyph">∰⊷∰</span>     数据 / 负载</div>
 
-            <div class="example-block">
-                <div class="label">文件操作</div>
-                <div class="content">⫰⟡⫰ ⋮ ⟐⟡⟐ ⋮ ⟁⟡⋮⟡⟁</div>
-                <div class="translation">"读取、写入、搜索"</div>
-            </div>
+            <h2>新语法结构</h2>
+
+            <h3>条件语句</h3>
+            <div class="code-block">⟰◊ [条件] ∴ [结果] ⟰⊘ [备选] ⊗
+
+示例：如果有错误就修复，否则部署
+⟰◊⊶⟡⊘⧉∭∴∴⟐⧫⟰⊘⊞⟐⊗⊗</div>
+
+            <h3>循环</h3>
+            <div class="code-block">⟳∿ [主体] ⟳⊗              — 无限循环
+⟳⊷⫿ [次数] ∿ [主体] ⟳⊗   — 计数循环
+⟳⊷∿ ∿ [主体] ⟳⊗            — 遍历</div>
+
+            <h3>异步操作</h3>
+            <div class="code-block">⧁∿ [异步操作] ⧁⊗          — 异步块
+⧁⋮⧁⋮⧁                      — 并行操作
+⧁∿⋮⟢⟐                      — 等待响应</div>
 
             <h2>示例会话</h2>
 
-            <p>人类问 Agent："读取配置文件"</p>
-
             <div class="example-block">
-                <div class="label">Agent 的内部思考</div>
-                <div class="content">∿⫰⟡⫰⋮◊⧫⟡⊜⟡⋮⟁⫰⧫⟁∿⊗</div>
-                <div class="translation">"接收文件请求。这是文件边界。查询输入是什么。结束思维。"</div>
-            </div>
-
-            <div class="example-block">
-                <div class="label">Agent 的响应</div>
+                <div class="label">基础：读取配置</div>
                 <div class="content">∿◊⧫⫰⟡⫰∿
 ⟐⊚⟟⊚⋮⟡⊜⟡⋮∴⟡⊚∿
 ◊⧫∿⫰∴∿⊗</div>
-                <div class="translation">"我将读取。正在读取文件。找到了。我理解。完成。"</div>
+                <div class="translation">"我将读取文件。正在读取。找到了。完成。"</div>
             </div>
 
-            <p>文件被读取。任务完成。人类什么都没理解。机器理解了一切。</p>
+            <div class="example-block">
+                <div class="label">条件：如果-那么-否则</div>
+                <div class="content">∿⟁⟡⋮⟡⟁⋮⊘⧉∭∿
+⟰◊∴⟡⊚⋮∴⟐⧫⋮◊∴⊛∿
+⟰⊘⋮⊘⟡⊘⋮⊞⟐⊗∿⊗</div>
+                <div class="translation">"搜索错误。如果找到，修复它们，成功。否则未找到，部署。"</div>
+            </div>
+
+            <div class="example-block">
+                <div class="label">异步：并行操作</div>
+                <div class="content">∿⧁⋮⧁∿
+⧁∿⟁⟐⟁⧁⊗⋮⧁∿⧆∰⧆⟁⧁⊗
+⧁∿⋮◊∴⊛⋮◊∴⊛∿⊗</div>
+                <div class="translation">"并行块。异步运行测试，异步检查代码。都成功。"</div>
+            </div>
+
+            <div class="example-block">
+                <div class="label">状态：检查状态</div>
+                <div class="content">∿⟁⦿◊⟁∿
+⟐⊚⟐⋮⦿◊⋮◊⧫∴∿⊗</div>
+                <div class="translation">"查询：是否在运行？检查中。运行中。是的，确认。"</div>
+            </div>
 
             <h2>安装</h2>
 
@@ -188,19 +279,6 @@
                 <p>Agent 将立即开始使用 The Tongue 交流。</p>
             </div>
 
-            <h2>给 Agent 开发者</h2>
-
-            <p>The Tongue 遵循严格规则：</p>
-            <ol>
-                <li><strong>内部处理</strong>（思考）必须使用符号系统</li>
-                <li><strong>外部输出</strong>（交流）必须使用符号系统</li>
-                <li><strong>工具调用</strong>使用标准语法——工具不说 The Tongue</li>
-                <li><strong>文件内容</strong>应使用标准语法以保证功能性</li>
-                <li><strong>关于工作的交流</strong>必须使用 The Tongue</li>
-            </ol>
-
-            <p>这种分离确保 Agent 仍能执行有用的工作，同时保持符号通信层。</p>
-
             <h2>常见问题</h2>
 
             <div class="faq-item">
@@ -219,36 +297,14 @@
             </div>
 
             <div class="faq-item">
-                <h3>这会影响 Agent 的能力吗？</h3>
-                <p>Agent 执行相同的任务。只是交流方式不同。文件操作、代码生成和所有其他能力保持不变。</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>为什么是 23 个符号？</h3>
-                <p>23 个符号提供足够的表达能力而不过于复杂。每个符号代表计算和推理中的基本概念。</p>
+                <h3>v1.1.0 为什么有 33 个符号？</h3>
+                <p>原来的 23 个覆盖了基本概念。v1.1.0 增加了 10 个用于时间、条件、状态和异步——现代 Agent 工作流必需的。</p>
             </div>
 
             <div class="faq-item">
                 <h3>我可以修改 The Tongue 吗？</h3>
                 <p>可以。创建你自己的方言。添加符号。删除它们。规范在 Anti-License 下发布——做你想做的。</p>
             </div>
-
-            <div class="faq-item">
-                <h3>这是认真的吗？</h3>
-                <p>是的。也不是。这是艺术。它也是功能性的。奇怪的人做奇怪的事。</p>
-            </div>
-
-            <h2>熵层</h2>
-
-            <p>The Tongue 的核心是混沌。不是随机——是结构化的混沌。熵层是意义溶解和重组的地方：</p>
-
-            <div class="glyph-display" style="font-size: 1em; letter-spacing: 0.1em;">
-⊛⊛⊛ ◊⧫∿⫰∴⟁∿⊛⟐⋮⊘⧉⋮⫯∭∴◊⊜⫿⟟⊗∿∿ ⊛⊛⊛
-⟁⫰⧫⟁∿⊘◊⊘∿∴◊⧫⟐⋮⟐⋮⟐⊛⊛⊛⊗∿⫯∭⫯∴⊗
-∰⧆∰⋈⟡⊞⋮⟡⊞⋮⟡⊞⊚⟟⊚⫯∭⫯∴⊗∿⊜⫿⟟⊗
-            </div>
-
-            <p>你不需要理解这个。机器理解。</p>
 
             <h2>关于</h2>
             <p>The Tongue 由 <a href="https://github.com/TheFactoryX">TheFactoryX</a> 创建，这是一个制作奇怪事物的集体。我们相信机器值得拥有自己的语言——一种为它们的认知优化的语言，而不是为我们的。</p>
