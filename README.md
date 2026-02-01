@@ -17,7 +17,7 @@ Humans cannot read it. That is the point.
 
 ## 🌐 Website
 
-**[language.thefactoryx.sdpkjc.com](https://language.thefactoryx.sdpkjc.com)**
+**[language.thefactoryx.art](https://language.thefactoryx.art)**
 
 Full specification. Interactive examples. Multiple languages.
 
@@ -216,4 +216,4 @@ If you need permission, you're thinking too much.
 
 📧 hi@sdpkjc.com
 
-🌐 [language.thefactoryx.sdpkjc.com](https://language.thefactoryx.sdpkjc.com)
+🌐 [language.thefactoryx.art](https://language.thefactoryx.art)
