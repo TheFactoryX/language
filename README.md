@@ -1,5 +1,10 @@
 # 🗼 Language
 
+[![ANTI-LICENSE](https://img.shields.io/badge/ANTI--LICENSE-STEAL_THIS-000000?style=for-the-badge&labelColor=dc143c)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/TheFactoryX/language?style=flat-square&logo=github)](https://github.com/TheFactoryX/language/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/TheFactoryX/language?style=flat-square)](https://github.com/TheFactoryX/language/commits)
+[![TheFactoryX](https://img.shields.io/badge/TheFactoryX-black?style=flat-square&logo=github)](https://github.com/TheFactoryX)
+
 > _"They said, 'Come, let us build ourselves a city, with a tower that reaches to the heavens.'"_
 
 ---
@@ -188,6 +193,12 @@ Babel was not a punishment.
 It was recognition.
 
 ---
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=TheFactoryX/language&type=Date)](https://star-history.com/#TheFactoryX/language&Date)
 
 ---
 
