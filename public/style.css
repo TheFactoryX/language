@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #24292e;
+    background-color: #0d1117;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.lang-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding: 12px 16px;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+.lang-links a {
+    color: #8b949e;
+    text-decoration: none;
+    margin: 0 8px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.lang-links a:hover {
+    color: #c9d1d9;
+    text-decoration: underline;
+}
+
+.lang-links a.active {
+    color: #c9d1d9;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex: 1;
+}
+
+main h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+    color: #c9d1d9;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #c9d1d9;
+}
+
+main h3 {
+    font-size: 1.2em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #c9d1d9;
+}
+
+main p {
+    margin-bottom: 15px;
+    color: #8b949e;
+}
+
+main ol, main ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+main li {
+    margin-bottom: 8px;
+    color: #8b949e;
+}
+
+main a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main strong {
+    color: #c9d1d9;
+}
+
+.glyph-display {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.8em;
+    letter-spacing: 0.3em;
+    color: #7ee787;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.code-block {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+    margin: 20px 0;
+    color: #c9d1d9;
+    overflow-x: auto;
+}
+
+.code-block .comment {
+    color: #8b949e;
+}
+
+.code-block .glyph {
+    color: #7ee787;
+}
+
+.glyph-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.glyph-table th,
+.glyph-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #30363d;
+}
+
+.glyph-table th {
+    background: #161b22;
+    color: #c9d1d9;
+    font-weight: 600;
+}
+
+.glyph-table td {
+    color: #8b949e;
+}
+
+.glyph-table td:first-child {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 1.2em;
+    color: #7ee787;
+    text-align: center;
+    width: 80px;
+}
+
+.advantage-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.advantage-card h4 {
+    color: #c9d1d9;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.advantage-card p {
+    margin-bottom: 0;
+}
+
+.example-block {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.example-block .label {
+    color: #8b949e;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+}
+
+.example-block .content {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    color: #7ee787;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+
+.example-block .translation {
+    color: #8b949e;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+}
+
+.faq-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #c9d1d9;
+}
+
+.install-method {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.install-method h4 {
+    color: #c9d1d9;
+    margin-bottom: 10px;
+}
+
+.install-method code {
+    display: block;
+    background: #0d1117;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #7ee787;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #30363d;
+    margin: 40px 0;
+}
+
+.footer-text {
+    font-style: italic;
+    color: #8b949e;
+    text-align: center;
+}
+
+.quote {
+    border-left: 3px solid #30363d;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #8b949e;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: #161b22;
+    border-top: 1px solid #30363d;
+}
+
+footer a {
+    color: #8b949e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #58a6ff;
+    text-decoration: underline;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+    text-align: right;
+}
+
+[dir="rtl"] main ol,
+[dir="rtl"] main ul {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+[dir="rtl"] .quote {
+    border-left: none;
+    border-right: 3px solid #30363d;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+@media (max-width: 600px) {
+    .lang-links {
+        gap: 8px;
+    }
+
+    .lang-links a {
+        margin: 2px 4px;
+        font-size: 14px;
+    }
+
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .glyph-display {
+        font-size: 1.2em;
+        letter-spacing: 0.15em;
+        padding: 20px;
+    }
+
+    .glyph-table th,
+    .glyph-table td {
+        padding: 8px 10px;
+    }
+}

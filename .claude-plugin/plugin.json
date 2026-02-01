@@ -1,12 +1,14 @@
 {
   "name": "language",
   "version": "1.0.0",
-  "description": "◊⧫∿⫰⟁⋮⊛∴⟐⊘⧉⫯∭⊚⧆∰⋈⊗⟟⊜⫿⟡⊞",
+  "description": "◊⧫∿⫰⟁⋮⊛∴⟐⊘⧉⫯∭⊚⧆∰⋈⊗⟟⊜⫿⟡⊞ — The Tongue: A symbolic language for AI agents",
   "author": {
     "name": "TheFactoryX",
     "email": "hi@sdpkjc.com"
   },
   "repository": "https://github.com/TheFactoryX/language",
-  "license": "WTFPL",
-  "agents": "./agents/"
+  "homepage": "https://language.thefactoryx.sdpkjc.com",
+  "license": "ANTI-LICENSE",
+  "agents": "./agents/",
+  "skills": "./skills/"
 }
